@@ -1,0 +1,351 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+// COLLECTION // COLLECTION // COLLECTION
+
+// Navbar
+
+.navigation{
+    padding-top: 10px;
+    height: 60px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100vw !important;
+    max-width: 1315px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.logo{
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.navigation h5{
+    color: $orange;
+    height: 100%;
+    line-height: 60px;
+    position: absolute;
+    font-weight: 700;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navigation i{
+    width: 40px;
+    height: 30px;
+    font-size: 24px;
+    position: absolute;
+    right: -10px;
+    color: black;
+    cursor: pointer;
+    top: 10px;
+}
+
+// Cards
+
+.card-title{
+    font-size: 12px;
+    color: $orange;
+    font-weight: 700;
+}
+
+.card-body{
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.card{
+    border: none;
+}
+
+.card img{
+    border-radius: 0;
+}
+
+.containercards{
+    width: 70%;
+    margin: auto;
+    position: relative;
+    
+}
+
+// Search Bar
+
+.searchbar{
+    padding-top: 70px;
+}
+
+.searchbar .container .row input{
+    border: 2px solid $orange;
+    border-radius: 0px;
+}
+.searchbar .container .row input::placeholder{
+    color: $orange;
+    font-weight: bold;
+}
+.searchbar .container .row .searchfield input:focus-visible{
+    outline: none;
+}
+
+.searchbar .container .row label{
+    color: $orange;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.searchfield{
+    background-color: red;
+    width: 100%;
+    position: relative;
+}
+
+.searchfield i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: $orange;
+    transform: scaleX(-1);
+}
+
+
+// Off Canvas Menu
+
+.menuCont {
+    transform: translateX(-101%);
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    background-color: $orange;
+    z-index: 10;
+    transition: 0.1s;
+    
+}
+
+.menuCont{
+    padding-top:20px;
+    padding-left: 5px;
+}
+
+.menuCont ul{
+    list-style: none;
+    padding-left: 0;
+    color: white;
+    
+}
+
+.menuCont .menuelements{
+    margin-right: 20px;
+}
+
+.menuCont i{
+    font-size: 20px;
+}
+
+.menuSearch i{
+    padding-right: 20px;
+    color: white;
+    
+}
+
+.menuSearch input{
+    border: solid 2px white;
+    background-color: rgba(0,0,0,0);
+    padding: 4px;
+    padding-left: 10px;
+}
+
+.menuCont input::placeholder{
+    color: white;
+}
+
+// TICKETS // TICKETS // TICKETS
+
+// Ticket Text
+
+.textpage{
+    padding-top: 80px;
+    
+}
+.textpage h1{
+    font-weight: bold;
+
+}
+.textpage h5{
+    color: $orange;
+    font-size: 14px;
+    width: 80%;
+}
+
+// Ticket Section
+
+// Date
+
+.ticketsection{
+    padding: 0 20px;
+    padding-top: 10px;
+}
+
+.ticketsection .container .row .col-4 h1{
+    font-size: 16px;
+    text-align: center;
+    color: $inactive;
+    font-weight: 600;
+    position: relative;
+}
+
+.line{
+    @include line;
+    background-color: $inactive;
+}
+
+#activetext{
+    color: black;
+}
+
+
+.activeline{
+    background-color: $orange;
+    height: 3px;
+    width: 30%;
+    margin: auto;
+}
+
+.datetext{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+// Ticket Amount
+
+.plus{
+    @include counter;
+}
+
+.minus{
+    @include counter;
+}
+
+.plus:hover{
+    color: black;
+    border-color: black;
+    cursor: pointer;
+}
+
+.minus:hover{
+    color: black;
+    border-color: black;
+    cursor: pointer;
+}
+
+#countervalue1, #countervalue2, #countervalue3{
+    @include counter;
+    font-weight: bold;
+    border-color: $empty;
+    font-size: 16px;
+    margin: 0 5px;
+};
+
+.counters{
+    width: 70px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ticketbuy{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.ticketpanel{
+    padding-right: 10px ;
+    margin-top: 50px;
+}
+
+.ticketbuy h1{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ticketbuy h5{
+    font-size: 12px;
+    color: $inactive;
+}
+
+// Total And Button
+
+.linetotal{
+    @include line;
+    background-color: $orange;
+}
+
+.totalsection{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    position: relative;
+}
+
+.totalsection h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#totalvalue{
+    position: absolute;
+    right: 0;
+    margin-right: 35px;
+}
+
+.button{
+    background-color: $orange;
+    border-radius: 0px;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+    margin-top: 25px;
+    border-color: $empty;
+    box-shadow: 0 8px 6px -6px rgb(156, 156, 156);
+}
+
+.button:active{
+    opacity: 90%;
+}
+
+@media screen and (max-width: 800px) {
+
+    .containercards{
+        width: 100%;
+        margin: auto;
+        position: relative;
+        
+    }
+
+    .menuCont{
+        width: 80%;
+    }
+
+}

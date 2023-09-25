@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+body {
+  font-family: "Montserrat", sans-serif;
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.navigation {
+  padding-top: 10px;
+  height: 60px;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  width: 100vw !important;
+  max-width: 1315px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.navigation h5 {
+  color: #FF473A;
+  height: 100%;
+  line-height: 60px;
+  position: absolute;
+  font-weight: 700;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation i {
+  width: 40px;
+  height: 30px;
+  font-size: 24px;
+  position: absolute;
+  right: -10px;
+  color: black;
+  cursor: pointer;
+  top: 10px;
+}
+
+.card-title {
+  font-size: 12px;
+  color: #FF473A;
+  font-weight: 700;
+}
+
+.card-body {
+  padding: 0px;
+  margin-top: 10px;
+}
+
+.card {
+  border: none;
+}
+
+.card img {
+  border-radius: 0;
+}
+
+.containercards {
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+
+.searchbar {
+  padding-top: 70px;
+}
+
+.searchbar .container .row input {
+  border: 2px solid #FF473A;
+  border-radius: 0px;
+}
+
+.searchbar .container .row input::-moz-placeholder {
+  color: #FF473A;
+  font-weight: bold;
+}
+
+.searchbar .container .row input::placeholder {
+  color: #FF473A;
+  font-weight: bold;
+}
+
+.searchbar .container .row .searchfield input:focus-visible {
+  outline: none;
+}
+
+.searchbar .container .row label {
+  color: #FF473A;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.searchfield {
+  background-color: red;
+  width: 100%;
+  position: relative;
+}
+
+.searchfield i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #FF473A;
+  transform: scaleX(-1);
+}
+
+.menuCont {
+  transform: translateX(-101%);
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  background-color: #FF473A;
+  z-index: 10;
+  transition: 0.1s;
+}
+
+.menuCont {
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+.menuCont ul {
+  list-style: none;
+  padding-left: 0;
+  color: white;
+}
+
+.menuCont .menuelements {
+  margin-right: 20px;
+}
+
+.menuCont i {
+  font-size: 20px;
+}
+
+.menuSearch i {
+  padding-right: 20px;
+  color: white;
+}
+
+.menuSearch input {
+  border: solid 2px white;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 4px;
+  padding-left: 10px;
+}
+
+.menuCont input::-moz-placeholder {
+  color: white;
+}
+
+.menuCont input::placeholder {
+  color: white;
+}
+
+.textpage {
+  padding-top: 80px;
+}
+
+.textpage h1 {
+  font-weight: bold;
+}
+
+.textpage h5 {
+  color: #FF473A;
+  font-size: 14px;
+  width: 80%;
+}
+
+.ticketsection {
+  padding: 0 20px;
+  padding-top: 10px;
+}
+
+.ticketsection .container .row .col-4 h1 {
+  font-size: 16px;
+  text-align: center;
+  color: #D4D4D4;
+  font-weight: 600;
+  position: relative;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #D4D4D4;
+}
+
+#activetext {
+  color: black;
+}
+
+.activeline {
+  background-color: #FF473A;
+  height: 3px;
+  width: 30%;
+  margin: auto;
+}
+
+.datetext {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.plus {
+  border: solid 2px #D4D4D4;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 16px;
+  color: #D4D4D4;
+  font-weight: bold;
+  float: left;
+}
+
+.minus {
+  border: solid 2px #D4D4D4;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 16px;
+  color: #D4D4D4;
+  font-weight: bold;
+  float: left;
+}
+
+.plus:hover {
+  color: black;
+  border-color: black;
+  cursor: pointer;
+}
+
+.minus:hover {
+  color: black;
+  border-color: black;
+  cursor: pointer;
+}
+
+#countervalue1, #countervalue2, #countervalue3 {
+  border: solid 2px #D4D4D4;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 16px;
+  color: #D4D4D4;
+  font-weight: bold;
+  float: left;
+  font-weight: bold;
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+.counters {
+  width: 70px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ticketbuy {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.ticketpanel {
+  padding-right: 10px;
+  margin-top: 50px;
+}
+
+.ticketbuy h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ticketbuy h5 {
+  font-size: 12px;
+  color: #D4D4D4;
+}
+
+.linetotal {
+  width: 100%;
+  height: 2px;
+  background-color: #FF473A;
+}
+
+.totalsection {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  position: relative;
+}
+
+.totalsection h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#totalvalue {
+  position: absolute;
+  right: 0;
+  margin-right: 35px;
+}
+
+.button {
+  background-color: #FF473A;
+  border-radius: 0px;
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+  width: 300px;
+  margin: auto;
+  margin-top: 25px;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 8px 6px -6px rgb(156, 156, 156);
+}
+
+.button:active {
+  opacity: 90%;
+}
+
+@media screen and (max-width: 800px) {
+  .containercards {
+    width: 100%;
+    margin: auto;
+    position: relative;
+  }
+  .menuCont {
+    width: 80%;
+  }
+}/*# sourceMappingURL=style.css.map */

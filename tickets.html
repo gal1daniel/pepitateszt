@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art Museum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navigation">
+    <h4 class="logo">The<br>Art<br>Museum</h4>
+    <h5>Plan Your Visit</h5>
+    <i class="bi bi-list" id="menubutton"></i>
+</nav>
+</nav>
+
+<!-- OFFCANVAS MENU -->
+<div class="menuCont" id="menuCont">
+    <div class="container">
+            <div class="menuSearch">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="menulist">
+                <ul>
+                    <a href="collections.html"><li class="my-3"><i class="bi bi-box menuelements"></i>Collections</li></a>
+                    <a href="tickets.html"><li><i class="bi bi-ticket menuelements"></i>Plan Your Visit</li></a>
+                </ul>
+            </div>
+    </div>
+</div>
+
+<!-- PAGE TEXT -->
+<div class="container textpage">
+    <div class="row">
+        <h1>Skip the Line.<br>Purchase Tickets.</h1>
+        <h5>All exhibitions, audio tours, and films included in the price of admission.</h5>
+    </div>
+</div>
+
+<!-- TICKETS -->
+<div class="ticketsection">
+    <div class="container">
+        <div class="row">
+                <!-- DATE -->
+                <div class="col-4">
+                    <h1>Today</h1>
+                </div>
+                <div class="col-4">
+                    <h1 id="activetext">Tomorrow</h1>
+                </div>
+                <div class="col-4">
+                    <h1>Other</h1>
+                </div>
+                <div class="line"><div class="activeline"></div></div>
+
+                <h5 class="datetext">March 22, 2016<br>Open 10:30am-5:30pm</h5>
+                
+                <!-- TICKET SECTION -->
+                <div class="ticketpanel">
+                    <div class="ticketbuy">
+                        <h1>Adults</h1>
+                        <div class="counters">
+                        <div class="minus" onclick="changevalue(1, -1)">-</div>
+                        <div id="countervalue1">0</div>
+                        <div class="plus"  onclick="changevalue(1, +1)">+</div></div>
+                    </div>
+                    <div class="ticketbuy">
+                        <h1>Adults</h1>
+                        <h5>65+ with ID</h5>
+                        <div class="counters">
+                            <div class="minus" onclick="changevalue(2, -1)">-</div>
+                            <div id="countervalue2">0</div>
+                            <div class="plus"  onclick="changevalue(2, +1)">+</div></div>
+                    </div>
+                    <div class="ticketbuy">
+                        <h1>Adults</h1>
+                        <h5>with ID</h5>
+                        <div class="counters">
+                            <div class="minus" onclick="changevalue(3, -1)">-</div>
+                            <div id="countervalue3">0</div>
+                            <div class="plus"  onclick="changevalue(3, +1)">+</div></div>
+                    </div>
+                </div>
+
+                <!-- TOTAL -->
+                    <div class="linetotal"></div>
+                    <div class="totalsection">
+                        <h1>Total</h1>
+                        <h1 id="totalvalue">$0</h1>
+                    </div>
+
+                    <button class="button">Continue to Payment</button>
+                    
+
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

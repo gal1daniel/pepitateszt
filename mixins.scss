@@ -1,0 +1,16 @@
+@mixin counter {
+    border: solid 2px $inactive;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 16px;
+    color: $inactive;
+    font-weight: bold;
+    float: left;
+}
+
+@mixin line{
+    width: 100%;
+    height: 2px;
+}
